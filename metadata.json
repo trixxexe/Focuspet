@@ -1,0 +1,6 @@
+{
+  "name": "FOCUSPET",
+  "description": "Your focus keeps it alive. Keep a virtual creature alive by staying focused.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

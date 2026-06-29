@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">FOCUSPET</string>
+    <string name="tagline">Your focus keeps it alive.</string>
+    <string name="mood_resting">RESTING</string>
+    <string name="mood_hungry">HUNGRY</string>
+    <string name="mood_energized">ENERGIZED</string>
+    <string name="mood_weakening">WEAKENING</string>
+    <string name="mood_thriving">THRIVING</string>
+    <string name="mood_weakened">WEAKENED</string>
+    
+    <string name="btn_begin_session">BEGIN SESSION</string>
+    <string name="btn_pause">PAUSE</string>
+    <string name="btn_abandon">ABANDON</string>
+    <string name="btn_continue">CONTINUE</string>
+    <string name="btn_stay_focused">STAY FOCUSED</string>
+    <string name="btn_next_session">NEXT SESSION</string>
+    <string name="btn_go_home">GO HOME</string>
+    <string name="btn_try_again">TRY AGAIN</string>
+    
+    <string name="nav_home">Home</string>
+    <string name="nav_stats">Stats</string>
+    <string name="nav_settings">Settings</string>
+    
+    <string name="abandon_dialog_title">Abandon session?</string>
+    <string name="abandon_dialog_desc">Your creature will suffer.</string>
+    
+    <string name="session_complete_title">SESSION COMPLETE</string>
+    <string name="session_complete_desc">+10 Vitality earned</string>
+    <string name="session_failed_title">SESSION ABANDONED</string>
+    <string name="session_failed_desc">−5 Vitality lost</string>
+    
+    <string name="stats_header">YOUR RECORD</string>
+    <string name="stats_completed_sessions">Sessions Completed</string>
+    <string name="stats_total_focus_time">Total Focus Time</string>
+    <string name="stats_current_streak">Current Streak</string>
+    <string name="stats_creature_vitality">Creature Vitality</string>
+    <string name="stats_days_suffix">%1$d days</string>
+    <string name="stats_hours_minutes_format">%1$dh %2$dm</string>
+    
+    <string name="settings_focus_duration">Focus Duration</string>
+    <string name="settings_break_duration">Break Duration</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_detect_unlock">Detect Phone Unlock</string>
+    <string name="settings_reset_creature">Reset Creature</string>
+    <string name="settings_reset_confirm_title">Reset Creature?</string>
+    <string name="settings_reset_confirm_desc">This will erase all your stats and vitality progress. This action cannot be undone.</string>
+    <string name="settings_reset_btn_confirm">RESET</string>
+    <string name="settings_reset_btn_cancel">CANCEL</string>
+    
+    <string name="footer_version">FOCUSPET v1.0</string>
+    <string name="picker_title">Select Focus Duration</string>
+    <string name="picker_minute_format">%1$d minutes</string>
+    
+    <string name="notification_channel_name">Focus Timer</string>
+    <string name="notification_title_active">Focusing...</string>
+    <string name="notification_desc_active">%1$s remaining. Don\'t quit.</string>
+    <string name="notification_focus_broken">You broke focus. Your creature is suffering.</string>
+</resources>
