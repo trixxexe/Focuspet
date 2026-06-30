@@ -29,6 +29,9 @@ jobs:
           else
             echo "GEMINI_API_KEY=mock_key_for_ci" > .env
           fi
+          if [ -f debug.keystore.base64 ]; then
+            base64 -d debug.keystore.base64 > debug.keystore
+          fi
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
