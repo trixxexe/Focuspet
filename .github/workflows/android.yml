@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - name: Create local.properties and Environment Variables
+      - name: Create local.properties, Environment Variables and Keystore
         run: |
           echo "sdk.dir=$ANDROID_HOME" > local.properties
           if [ -f .env.example ]; then
@@ -30,7 +30,12 @@ jobs:
             echo "GEMINI_API_KEY=mock_key_for_ci" > .env
           fi
           if [ -f debug.keystore.base64 ]; then
+            echo "Decoding debug.keystore.base64..."
             base64 -d debug.keystore.base64 > debug.keystore
+          fi
+          if [ ! -f debug.keystore ]; then
+            echo "debug.keystore not found, generating a new one dynamically..."
+            keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug, O=Android, C=US"
           fi
 
       - name: Set up Gradle
